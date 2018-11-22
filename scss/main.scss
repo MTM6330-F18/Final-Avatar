@@ -11,7 +11,9 @@ $hr-border-color: #909390; // set the <hr> border colour to AC Charcoal @50% tin
 
 // Custom styles that are common for all pages in our project
 
-
+.container {
+    background-color:blue;
+}
 // Load our custom partials with styles specific to a particular page.
 // e.g. @import 'schedule';
 // will import the '_schedule.scss' file with style specific to the schedule page.
