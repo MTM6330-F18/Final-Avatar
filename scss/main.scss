@@ -16,7 +16,7 @@ $hr-border-color: #909390; // set the <hr> border colour to AC Charcoal @50% tin
 html {
     font-family: "Poppins";
     
-
+}
 body {
     margin: 0;
     padding: 0;
@@ -26,8 +26,8 @@ body {
 .navbar-brand img{
     width: 10%；
 }
-.bg-light{
-    background-color:red;
+.bg-light, .navbar-expand-lg .navbar-collapse{
+    background-color:red !important;
 }
 nav div {
     background: lightgrey;
@@ -42,6 +42,7 @@ nav div {
 
 .navbar{
     padding: 0;
+    background-color:red;
 }
 
 .navbar-brand img{
