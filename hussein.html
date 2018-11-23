@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/min/main.css">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- login add -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                  <a class="nav-link" href="#">Course Review <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                  <a class="nav-link" href="course_schedule.html">Class Schedule</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Particular Courses
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="responsiveWebDesign.html">Responsive Web Design</a>
+                                        <a class="dropdown-item" href="webProduction.html">Web Production</a>
+                                        <a class="dropdown-item" href="sever-sideWebDevelopment.html">Sever-side Web
+                                              Development </a>
+                                  </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Particular Professors
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="robert.html">Robert McKenney</a>
+                                        <a class="dropdown-item" href="michael.html">Michael Eisenbraun</a>
+                                        <a class="dropdown-item" href="hussein.html">Hussein Tayrani</a>
+                                  </div>
+                            </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                </div>
+          </nav>
+    <!-- course -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="imgs/robert.jpeg" alt="">
+            </div>
+            <div class="col contact-info">
+                <h1>Hussein Tayrani</h1>
+                <p>tayranh@algonquincollege.com </p>
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col">
+                <div class="courseTaught">
+                    <h1>Courses Taught by this Professor</h1>
+                </div>
+                <button id="btn1">
+                        <h2>MTM6231 Content Management System</h2>
+                        
+                    <h5>(click this button to know more)</h5>
+                </button>
+                <button id="btn2">
+    
+                                <h2>MTM6330 Motion Graphics</h2>
+                                
+                            <h5>(click this button to know more)</h5>
+                </button>
+
+
+            </div>
+        </div>
+        <div class="row">
+                <div class="col">
+                    <div id="pannel">
+                         <h5>MTM6231 Content Management System</h5>
+                        <p>In the fast-paced media industry, not every project needs to be built from scratch. Content
+                                Management Systems (CMS) offer pre-built functionality that designers and developers can work
+                                with to deliver diverse, feature-rich, modern websites. Students learn first-hand how to quickly
+                                install, configure, customize and style websites built on these systems. In addition, students learn
+                                how and when using a CMS is appropriate, when it can benefit projects and clients and how to
+                                integrate a variety of social media systems within their CMS.</p>
+                                <h5>MTM6231 Content Management System</h5>
+                        <p>Motion graphics, typography, special effects, and animation are used in the industry to market and
+                                sell products and services. Students enhance existing video footage and create brand- or product-
+                                based animation sequences through industry-standard motion graphics software packages.
+                                Students work with multiple forms of media, syncing together audio, video, transitions and added
+                                effects to create professional quality video.</p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Load jQuery from CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('#pannel').hide();
+                $('#btn1').on('click',function(){
+                   $('#pannel').toggle(200);
+                });
+
+            });
+        </script>
+
+</body>
+
+</html>
