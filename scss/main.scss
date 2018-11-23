@@ -27,7 +27,7 @@ body {
     width: 10%；
 }
 .bg-light, .navbar-expand-lg .navbar-collapse{
-    background-color:red !important;
+    background-color:green !important;
 }
 nav div {
     background: lightgrey;
@@ -181,6 +181,10 @@ nav div {
     padding: 0;
   }
 /* slide2 */
+/* log in */
+  .container.login-page{
+    background:red !important;
+  }
 /* log in */
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 /* Look at console */
