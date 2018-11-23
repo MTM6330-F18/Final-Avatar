@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6314,13 +6315,18 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 html {
-  font-family: "Poppins";
-  background-color: #006341; }
+  font-family: "Poppins"; }
 
 body {
   margin: 0;
   padding: 0;
   background: #9ad7e2; }
+
+.navbar-brand img {
+  width: 10%；; }
+
+.bg-light {
+  background-color: red; }
 
 nav div {
   background: lightgrey;
@@ -6625,6 +6631,29 @@ nav div {
 
 .section h1 {
   padding: 5%; }
+
+nav img {
+  width: 60px !important;
+  margin: 20px;
+  color: #ddee54; }
+
+.bg-light, .navbar-lg .navbar-collapse {
+  background-color: #474c4f !important; }
+
+#navbarSupportedContent {
+  background-color: #474c4f !important; }
+
+nav a {
+  color: white !important; }
+
+.btn-outline-success {
+  background-color: #ddee54 !important;
+  border-color: #ddee54 !important;
+  color: black !important;
+  margin-top: 2px !important; }
+
+.form-control {
+  background-color: #ccdbde !important; }
 
 @media screen and (min-width: 768px) {
   .navbar-expand-lg {
