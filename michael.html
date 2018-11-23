@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/min/main.css">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- login add -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                  <a class="nav-link" href="#">Course Review <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                  <a class="nav-link" href="course_schedule.html">Class Schedule</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Particular Courses
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="responsiveWebDesign.html">Responsive Web Design</a>
+                                        <a class="dropdown-item" href="webProduction.html">Web Production</a>
+                                        <a class="dropdown-item" href="sever-sideWebDevelopment.html">Sever-side Web
+                                              Development </a>
+                                  </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Particular Professors
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="robert.html">Robert McKenney</a>
+                                        <a class="dropdown-item" href="michael.html">Michael Eisenbraun</a>
+                                        <a class="dropdown-item" href="hussein.html">Hussein Tayrani</a>
+                                  </div>
+                            </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                </div>
+          </nav>
+    <!-- course -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="imgs/robert.jpeg" alt="">
+            </div>
+            <div class="col contact-info">
+                <h1>Robert McKenney</h1>
+                <p>mckennr@algonquincollege.com</p>
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col">
+                <div class="courseTaught">
+                    <h1>Courses Taught by this Professor</h1>
+                </div>
+                <button id="btn1">
+                    <h2>MTM6330 Web Production</h2>
+                    <h5>(click this button to know more)</h5>
+                </button>
+
+
+            </div>
+        </div>
+        <div class="row">
+                <div class="col">
+                    <div id="pannel">
+                       
+                        <p>there are many common problems that every developer needs to solve. Building on the web design
+                            and development skills learned in the first two terms students learn how to increase their
+                            productivity by using a variety of industry standard tools and frameworks.</p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Load jQuery from CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script>
+            $(document).hide(300).ready(function () {
+
+                $('#btn1').on('click',function(){
+                   $('#pannel').toggle(200);
+                });
+
+            });
+        </script>
+
+</body>
+
+</html>
