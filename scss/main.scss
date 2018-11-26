@@ -37,15 +37,30 @@ nav div {
     cursor: pointer;
    
 }
+.navbar-light .navbar-nav .nav-link {
+  color:white;
+}
 
-
+.navbar-brand img {
+  width: 20%;
+  margin-left: 5%;
+}
+#navbarSupportedContent, .bg-light, .navbar-lg .navbar-collapse {
+  background-color: #474c4f!important;
+}
 
 .navbar{
     padding: 0;
 }
+.form-control {
+  background-color: #ccdbde!important;
+}
 
-.navbar-brand img{
-    width: 30px;
+.btn-outline-success {
+  color: #28a745;
+  background-color: #ddee54;
+  background-image: none;
+  border-color: #28a745;
 }
 /* slide2 */
 .slider-container {
