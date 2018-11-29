@@ -6330,7 +6330,7 @@ body {
 
 nav div {
   background: lightgrey;
-  color: #292929;
+  color: #474c4f;
   font-size: 24px;
   padding: 0.6em;
   cursor: pointer; }
@@ -6351,11 +6351,24 @@ nav div {
 .form-control {
   background-color: #ccdbde !important; }
 
+.form-control:hover {
+  border-color: #ddee54; }
+
 .btn-outline-success {
-  color: #28a745;
+  color: #474c4f;
   background-color: #ddee54;
   background-image: none;
-  border-color: #28a745; }
+  border-color: #474c4f; }
+
+.dropdown-item {
+  padding: .25rem 2.5rem; }
+
+.dropdown-menu {
+  background-color: #ddee54; }
+
+.dropdown-item:active {
+  background: #474c4f;
+  color: white; }
 
 /* slide2 */
 .slider-container {
@@ -6489,6 +6502,28 @@ nav div {
 
 /* slide2 */
 /* log in */
+table {
+  border-collapse: collapse;
+  font-family: sans-serif;
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0 2rem 0; }
+
+th {
+  border: 1px solid white;
+  background-color: #474c4f;
+  color: white;
+  padding: 1rem;
+  text-align: center; }
+
+td {
+  border: 1px dotted #4cba6d;
+  padding: 0.7rem;
+  text-align: center; }
+
+.table .thead-dark th {
+  background-color: #474c4f; }
+
 /* Look at console */
 .login-page {
   width: 360px;
@@ -6522,11 +6557,11 @@ nav div {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #FF6229;
+  background: #ddee54;
   width: 100%;
   border: 0;
   padding: 15px;
-  color: #FFFFFF;
+  color: #474c4f;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -6541,7 +6576,7 @@ nav div {
   font-size: 16px; }
 
 .form .message a {
-  color: #FF7F50;
+  color: #ddee54;
   text-decoration: none; }
 
 .form .login-form {
@@ -6613,30 +6648,40 @@ nav div {
 /* Set a specific color for each brand */
 /* Facebook */
 .fa-facebook {
-  background: #3b5998;
-  color: white; }
+  background: #ddee54;
+  color: #474c4f; }
 
 /* Twitter */
 .fa-twitter {
-  background: #55acee;
-  color: white; }
+  background: #ddee54;
+  color: #474c4f; }
 
 .fa-instagram {
-  background: #125688;
-  color: white; }
+  background: #ddee54;
+  color: #474c4f; }
 
 .fa-pinterest {
-  background: #cb2027;
-  color: white; }
+  background: #ddee54;
+  color: #474c4f; }
 
 .footer {
   text-align: center; }
 
 .footer p {
-  background-color: #ddee54; }
+  background-color: #474c4f;
+  color: #fff; }
+
+.copyRight {
+  position: relative; }
+
+.socialMedia {
+  position: absolute;
+  top: 2;
+  top: 70%;
+  right: 5%; }
 
 .create-button {
-  background-color: #ddee54; }
+  background-color: #474c4f; }
 
 /* course-schedule */
 .course-img {
@@ -6647,6 +6692,12 @@ nav div {
 
 .section h1 {
   padding: 5%; }
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: white; }
+
+.navbar-light .navbar-nav .active > .nav-link:active {
+  color: #292929; }
 
 @media screen and (min-width: 768px) {
   .navbar-expand-lg {

@@ -69,7 +69,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="imgs/robert.jpeg" alt="">
+                <img src="imgs/hussein.jpg" alt="">
             </div>
             <div class="col contact-info">
                 <h1>Hussein Tayrani</h1>
@@ -99,20 +99,25 @@
         </div>
         <div class="row">
                 <div class="col">
-                    <div id="pannel">
-                         <h5>MTM6231 Content Management System</h5>
-                        <p>In the fast-paced media industry, not every project needs to be built from scratch. Content
-                                Management Systems (CMS) offer pre-built functionality that designers and developers can work
-                                with to deliver diverse, feature-rich, modern websites. Students learn first-hand how to quickly
-                                install, configure, customize and style websites built on these systems. In addition, students learn
-                                how and when using a CMS is appropriate, when it can benefit projects and clients and how to
-                                integrate a variety of social media systems within their CMS.</p>
+                    <div >
+                        <div id="pannel1">
                                 <h5>MTM6231 Content Management System</h5>
-                        <p>Motion graphics, typography, special effects, and animation are used in the industry to market and
-                                sell products and services. Students enhance existing video footage and create brand- or product-
-                                based animation sequences through industry-standard motion graphics software packages.
-                                Students work with multiple forms of media, syncing together audio, video, transitions and added
-                                effects to create professional quality video.</p>
+                                <p >In the fast-paced media industry, not every project needs to be built from scratch. Content
+                                        Management Systems (CMS) offer pre-built functionality that designers and developers can work
+                                        with to deliver diverse, feature-rich, modern websites. Students learn first-hand how to quickly
+                                        install, configure, customize and style websites built on these systems. In addition, students learn
+                                        how and when using a CMS is appropriate, when it can benefit projects and clients and how to
+                                        integrate a variety of social media systems within their CMS.</p>
+                        </div>
+                         <div id="pannel2">
+                                <h5>MTM6231 Content Management System</h5>
+                                <p>Motion graphics, typography, special effects, and animation are used in the industry to market and
+                                        sell products and services. Students enhance existing video footage and create brand- or product-
+                                        based animation sequences through industry-standard motion graphics software packages.
+                                        Students work with multiple forms of media, syncing together audio, video, transitions and added
+                                        effects to create professional quality video.</p>
+                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -136,9 +141,16 @@
 
         <script>
             $(document).ready(function () {
-                $('#pannel').hide();
+                $('#pannel1').hide();
                 $('#btn1').on('click',function(){
-                   $('#pannel').toggle(200);
+                   $('#pannel1').toggle(200);
+                });
+
+            });
+            $(document).ready(function () {
+                $('#pannel2').hide();
+                $('#btn2').on('click',function(){
+                   $('#pannel2').toggle(200);
                 });
 
             });
