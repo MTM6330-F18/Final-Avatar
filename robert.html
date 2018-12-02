@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
    
-    <title>Responsive Web Design</title>
+    <title>Porject Management Skills</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
@@ -41,7 +41,7 @@
                                         Particular Courses
                                   </a>
                                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="responsiveWebDesign.html">Responsive Web Design</a>
+                                        <a class="dropdown-item" href="ProjectManage.html">Porject Management Skills</a>
                                         <a class="dropdown-item" href="webProduction.html">Web Production</a>
                                         <a class="dropdown-item" href="sever-sideWebDevelopment.html">Sever-side Web
                                               Development </a>
@@ -68,7 +68,7 @@
     <!-- course -->
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col centered">
                 <img src="imgs/robert.jpeg" alt="">
             </div>
             <div class="col contact-info">
@@ -102,25 +102,27 @@
             </div>
         </div>
         <footer class="footer">
-              <div class="row">
-                    <div class="col col-12">
-                          <p class="copyRight">©Avatar | Interactive Media Design</p>
-                          <div class="socialMedia">
-                                <a href="#" class="fa fa-facebook"></a>
-                                <a href="#" class="fa fa-twitter"></a>
-                                <a href="#" class="fa fa-instagram"></a>
-                                <a href="#" class="fa fa-pinterest"></a>
-                          </div>
-                    </div>
-              </div>
+                <div class="container">
+                <div class="row">
+                      <div class="col-md-6 copyrightContainer col-12">
+                            <p class="copyRight text-center">©Avatar | Interactive Media Design</p>
+                      </div>
+                       <div class="socialMedia col-md-6">
+                                  <a href="https://www.facebook.com/algonquincollege/" class="fa fa-facebook"></a>
+                                  <a href="https://twitter.com/AlgonquinColleg?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+                                  <a href="https://www.instagram.com/algonquincollege/?hl=en" class="fa fa-instagram"></a>
+                                  <a href="https://www.pinterest.ca/algcollege/" class="fa fa-pinterest"></a>
+                            </div>
+                      </div>
+                </div>
 
-        </footer>
+          </footer>
         <!-- Load jQuery from CDN -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <script>
-            $(document).hide(300).ready(function () {
-
+            $(document).ready(function () {
+                $('#pannel').hide();
                 $('#btn1').on('click',function(){
                    $('#pannel').toggle(200);
                 });
