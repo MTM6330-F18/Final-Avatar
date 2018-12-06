@@ -6340,7 +6340,7 @@ nav div {
 
 .navbar-brand img {
   width: 50px;
-  margin-left: 5%; }
+  margin-left: 25%; }
 
 #navbarSupportedContent, .bg-light, .navbar-lg .navbar-collapse {
   background-color: #474c4f !important; }
@@ -6533,6 +6533,9 @@ td {
 
 .table .thead-dark th {
   background-color: #474c4f; }
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.75); }
 
 #btn1, #btn2 {
   display: block;
@@ -6767,3 +6770,15 @@ td {
     text-align: left; }
   #btn1, #btn2 {
     margin: 0px; } }
+
+.title, .col p {
+  margin-top: 3rem; }
+
+.gradeScheme {
+  margin-top: 3rem; }
+
+.credit .row h1 {
+  margin: 0 auto; }
+
+.centered, .contact-info, .courseTaught {
+  margin-top: 3rem; }

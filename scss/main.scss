@@ -43,7 +43,7 @@ nav div {
 
 .navbar-brand img {
   width: 50px;
-  margin-left: 5%;
+  margin-left: 25%;
 }
 #navbarSupportedContent, .bg-light, .navbar-lg .navbar-collapse {
   background-color: #474c4f!important;
@@ -247,6 +247,9 @@ td {
 }
 .table .thead-dark th{
   background-color:#474c4f;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(265,265,265,.75);
 }
 #btn1, #btn2 {
   display: block;
@@ -516,6 +519,9 @@ border-radius: .25rem;
        
 }
 
+
 // Load our custom partials with styles specific to a particular page.
 // e.g. @import 'schedule';
 // will import the '_schedule.scss' file with style specific to the schedule page.
+@import 'particularCourses';
+@import 'particularProfessors';
