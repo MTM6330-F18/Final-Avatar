@@ -6339,7 +6339,7 @@ nav div {
   color: white; }
 
 .navbar-brand img {
-  width: 20%;
+  width: 50px;
   margin-left: 5%; }
 
 #navbarSupportedContent, .bg-light, .navbar-lg .navbar-collapse {
@@ -6506,7 +6506,12 @@ nav div {
   padding: 0; }
 
 /* slide2 */
-/* log in */
+.main-index {
+  margin-top: 3em; }
+
+.main-index h1 {
+  text-align: center; }
+
 table {
   border-collapse: collapse;
   font-family: sans-serif;
@@ -6528,6 +6533,10 @@ td {
 
 .table .thead-dark th {
   background-color: #474c4f; }
+
+#btn1, #btn2 {
+  display: block;
+  margin: auto; }
 
 /* Look at console */
 .login-page {
@@ -6632,6 +6641,9 @@ td {
 .socialMedia {
   justify-content: center; }
 
+.socialMedia a {
+  margin: 5px; }
+
 .fa {
   font-size: 30px;
   width: 40px;
@@ -6734,6 +6746,9 @@ td {
 .gradeScheme .row h1 {
   margin: 0 auto; }
 
+.fa-navicon {
+  color: #b3b3b3 !important; }
+
 @media screen and (min-width: 768px) {
   .login-page {
     padding-top: 40px;
@@ -6749,4 +6764,6 @@ td {
   .courseTaught {
     text-align: left; }
   .title {
-    text-align: left; } }
+    text-align: left; }
+  #btn1, #btn2 {
+    margin: 0px; } }
