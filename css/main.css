@@ -6777,8 +6777,17 @@ td {
 .gradeScheme {
   margin-top: 3rem; }
 
-.credit .row h1 {
+.credit .row h1, .interview h1 {
+  text-align: center;
   margin: 0 auto; }
 
 .centered, .contact-info, .courseTaught {
   margin-top: 3rem; }
+
+#interview h1 {
+  text-align: center;
+  margin-top: 3rem; }
+
+@media screen and (min-width: 768px) {
+  #interview h1 {
+    text-align: left; } }

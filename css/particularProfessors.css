@@ -1,2 +1,10 @@
 .centered, .contact-info, .courseTaught {
   margin-top: 3rem; }
+
+#interview h1 {
+  text-align: center;
+  margin-top: 3rem; }
+
+@media screen and (min-width: 768px) {
+  #interview h1 {
+    text-align: left; } }
