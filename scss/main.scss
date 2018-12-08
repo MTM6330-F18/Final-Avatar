@@ -2,85 +2,47 @@
 // See node_modules/bootstrap/scss/_variables.scss for all of the
 // potential variables to customize.
 // For example ...
-$primary: #006341; // set the primary color to AC Green
-$jumbotron-bg: #E5EFEC; // set the Jumbotron background to AC Green @10% tint
-$hr-border-color: #909390; // set the <hr> border colour to AC Charcoal @50% tint
-
+$primary: #9ad7e2; // set the primary color 
+$second-primary:#474c4f; // set the Jumbotron background to AC Green @10% tint
+$third-primary:#ddee54;// set the <hr> border colour to AC Charcoal @50% tint
+$white:#fff;
 // Load the main bootstrap framework.
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 
 // Custom styles that are common for all pages in our project
 
-
-html {
-    font-family: "Poppins";
-    
-}
-body {
-    margin: 0 0 20rem 0;
-    padding: 0;
-    background: #9ad7e2;
-    
-}
-.navbar-brand img{
-    width: 10%；
-}
-.bg-light{
-    background-color:red;
-}
-nav div {
-    background: lightgrey;
-    color: #474c4f;
-    font-size: 24px;
-    padding: 0.6em;
-    cursor: pointer;
-   
-}
-.navbar-light .navbar-nav .nav-link {
-  color:white;
-}
-
-.navbar-brand img {
-  width: 50px;
-  margin-left: 25%;
-}
-#navbarSupportedContent, .bg-light, .navbar-lg .navbar-collapse {
-  background-color: #474c4f!important;
-
-}
-
-.navbar{
-    padding: 0;
-}
+// course review
 .form-control {
   background-color: #ccdbde!important;
+  &:hover{
+    border-color:$third-primary;
+  }
 }
-.form-control:hover {
-  border-color:#ddee54;
-}
+.form-control
 .form{
   margin:0 auto;
   border: 1px solid rgba(0,0,0,.125);
 border-radius: .25rem;
 }
 .btn-outline-success {
-  color: #474c4f;
-  background-color: #ddee54;
+  color: $second-primary;
+  background-color: $third-primary;
   background-image: none;
-  border-color: #474c4f;
+  border-color: $second-primary;
 }
 
 .dropdown-item {
   padding: .25rem 2.5rem;
+  &:active{
+    background:$second-primary;
+    color:$white;
+  }
 }
 .dropdown-menu{
-  background-color: #ddee54;
+  background-color:$third-primary;
 }
-.dropdown-item:active{
-  background:#474c4f;
-  color:white;
-}
+
 
 /* slide2 */
 .slider-container {
@@ -88,8 +50,7 @@ border-radius: .25rem;
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
-    background-color: #444;
-    -webkit-user-select: none;
+   -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
@@ -98,12 +59,12 @@ border-radius: .25rem;
   .slider {
     position: relative;
     width: 9999px;
+    &:before, &:after{
+      display: table;
+      content: ' ';
+    }
   }
-  .slider:before,
-  .slider:after {
-    display: table;
-    content: ' ';
-  }
+  
   .slider:after {
     clear: both;
   }
@@ -113,18 +74,13 @@ border-radius: .25rem;
     margin: 0;
     padding: 0;
     height: 100%;
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
   }
-  .slider__item img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  .slider__switch span {
-    color: #fff;
-    display: block;
-    width: 32px;
-    height: 32px;
-  }
+  
   /* Arrows */
   .slider__switch {
     position: absolute;
@@ -141,7 +97,16 @@ border-radius: .25rem;
     background: #000;
     opacity: .3;
     transition: opacity .15s ease;
-    fill: #fff;
+    fill:$white;
+    span {
+      color: $white;
+      display: block;
+      width: 32px;
+      height: 32px;
+    }
+    &:hover {
+      opacity: .85;
+    }
   }
   .slider__switch--prev {
     left: 10px;
@@ -150,9 +115,7 @@ border-radius: .25rem;
     right: 10px;
   }
   
-  .slider__switch:hover {
-    opacity: .85;
-  }
+  
   .slider__switch[disabled] {
     visibility: hidden;
     opacity: 0;
@@ -164,7 +127,7 @@ border-radius: .25rem;
     display: block;
     max-width: 500px;
     padding: 10px;
-    color: #fff;
+    color:$white;
     background: rgba(0, 0, 0, .8);
     box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.9);
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000'); /* ie8 */
@@ -196,16 +159,17 @@ border-radius: .25rem;
        -moz-transition: background .5s ease;
          -o-transition: background .5s ease;
             transition: background .5s ease;
-    border: 2px solid #fff;
+    border: 2px solid $white;
     border-radius: 50%;
     background: transparent;
+    .is-active {
+      width: 12px;
+      height: 12px;
+      background: $white;
+    }
   }
   
-  .slider-nav__control.is-active {
-    width: 12px;
-    height: 12px;
-    background: #fff;
-  }
+  .slider-nav__control
   .slider.has-touch {
     cursor: move;
     cursor: -webkit-grabbing;
@@ -217,11 +181,12 @@ border-radius: .25rem;
 /* slide2 */
 .main-index {
   margin-top:3em;
+  h1{
+    text-align: center;
+   }
 }
-.main-index h1{
- text-align: center;
-}
-// index page
+
+// course review page
 
 // grading
 table {
@@ -233,9 +198,9 @@ table {
 }
 
 th {
-  border: 1px solid white;
-  background-color: #474c4f;
-  color:white;
+  border: 1px solid $white;
+  background-color:$second-primary;
+  color:$white;
   padding:1rem;
   text-align: center;
 }
@@ -246,7 +211,7 @@ td {
   text-align: center;
 }
 .table .thead-dark th{
-  background-color:#474c4f;
+  background-color:$second-primary;
 }
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: rgba(265,265,265,.75);
@@ -273,80 +238,77 @@ margin: 0 auto 100px;
 padding: 45px;
 text-align: center;
 box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  }
+  button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background:$third-primary;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #474c4f;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    }
+    .message {
+      margin: 15px 0 0;
+      color: #b3b3b3;
+      font-size: 16px;
+      a {
+        color: $third-primary;
+        text-decoration: none;
+        }
+      }
+      .login-form {
+        display: none;
+        }
 }
-.form input {
-font-family: "Roboto", sans-serif;
-outline: 0;
-background: #f2f2f2;
-width: 100%;
-border: 0;
-margin: 0 0 15px;
-padding: 15px;
-box-sizing: border-box;
-font-size: 14px;
-}
-.form button {
-font-family: "Roboto", sans-serif;
-text-transform: uppercase;
-outline: 0;
-background: #ddee54;
-width: 100%;
-border: 0;
-padding: 15px;
-color: #474c4f;
-font-size: 14px;
--webkit-transition: all 0.3 ease;
-transition: all 0.3 ease;
-cursor: pointer;
-}
-.form button:hover,.form button:active,.form button:focus {
-background: #FF5415;
-}
-.form .message {
-margin: 15px 0 0;
-color: #b3b3b3;
-font-size: 16px;
-}
-.form .message a {
-color: #ddee54;
-text-decoration: none;
-}
-.form .login-form {
-display: none;
-}
+
+
 .container {
 position: relative;
 z-index: 1;
 // margin:5%;
+&::before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+  }
+  .info {
+    margin: 50px auto;
+    text-align: center;
+    h1 {
+      margin: 0 0 15px;
+      padding: 0;
+      font-size: 36px;
+      font-weight: 300;
+      color: #1a1a1a;
+      }
+      span {
+        color: #4d4d4d;
+        font-size: 12px;
+        a {
+          color: #000000;
+          text-decoration: none;
+          }
+        }
+    }
+}
 
-}
-.container:before, .container:after {
-content: "";
-display: block;
-clear: both;
-}
-.container .info {
-margin: 50px auto;
-text-align: center;
-}
-.container .info h1 {
-margin: 0 0 15px;
-padding: 0;
-font-size: 36px;
-font-weight: 300;
-color: #1a1a1a;
-}
-.container .info span {
-color: #4d4d4d;
-font-size: 12px;
-}
-.container .info span a {
-color: #000000;
-text-decoration: none;
-}
-.container .info span .fa {
-color: #FF7F50;
-}
+
 
 
 .login-page {
@@ -358,15 +320,15 @@ color: #FF7F50;
 .copyRight {
 background-color: #f7f7f7;
 text-align: left;
-
-color:#4c474f;
+color:$second-primary;
 }
 .socialMedia {
 justify-content: center;
-}
-.socialMedia a {
+a {
   margin:5px;
   }
+}
+
 .fa {
 font-size: 30px;
 width: 40px;
@@ -394,56 +356,55 @@ text-decoration: none;
 
 /* Facebook */
 .fa-facebook {
-background: #ddee54;
-color: #474c4f;
+background: $third-primary;
+color: $second-primary;
 }
 
 /* Twitter */
 .fa-twitter {
-background:#ddee54;
-color: #474c4f;
+background:$third-primary;
+color: $second-primary;
 }
 .fa-instagram {
-background:#ddee54;
-color: #474c4f;
+background:$third-primary;
+color: $second-primary;
 }
 
 .fa-pinterest {
-background:#ddee54;
-color: #474c4f;
+background:$third-primary;
+color: $second-primary;
 }
 .footer{
 
 text-align: center;
-background: #474c4f;
+background: $second-primary;
 padding-top:30px;
 padding-bottom:30px;
 position:fixed;
 bottom:0;
 width:100%;
 z-index: 99;
-
-
-}
-.footer .row .col-md-6 {
+.row .col-md-6 {
   display:flex;
   align-items:center;
 }
-.footer p{
-background-color:#474c4f;
-color:#fff;
+p{
+  background-color:$second-primary;
+  color:#fff;
+  }
 }
+ 
 .copyRight{
   position: relative;
   margin-bottom: 0;
 }
 
 .create-button{
-background-color: #474c4f;
+background-color: $second-primary;
 }
 #create-button:hover
 {
-  background-color:#474c4f !important;
+  background-color:$second-primary !important;
   color: white;
 }
 #create-username, #create-password, #create-email {
@@ -454,19 +415,22 @@ background-color: #474c4f;
 .course-img{
 width:100%;
 }
-.section h3{
-padding: 3%;
-}
-.section h1{
-padding: 5%;
+.section {
+  h3{
+padding: 3%;}
+h1{
+  padding: 5%;
+  }
 }
 
+
 .navbar-light .navbar-nav .active>.nav-link{
-  color: white;
+  color:$white;
+  &:active{
+    color: #292929;
+  }
 }
-.navbar-light .navbar-nav .active>.nav-link:active{
-  color: #292929;
-}
+
 .copyrightContainer {
   justify-content: center;
 
@@ -525,3 +489,4 @@ border-radius: .25rem;
 // will import the '_schedule.scss' file with style specific to the schedule page.
 @import 'particularCourses';
 @import 'particularProfessors';
+@import 'base';

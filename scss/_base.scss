@@ -1,0 +1,41 @@
+
+html {
+    font-family: "Poppins";
+    
+}
+body {
+    margin: 0 0 20rem 0;
+    padding: 0;
+    background: $primary;
+    
+}
+
+// nav
+.navbar-brand img {
+    width: 10%；
+}
+
+nav div {
+    background: lightgrey;
+    color:$second-primary;
+    font-size: 24px;
+    padding: 0.6em;
+    cursor: pointer;
+   
+}
+.navbar-light .navbar-nav .nav-link {
+  color:$white;
+}
+
+.navbar-brand img {
+  width: 50px;
+  margin-left: 25%;
+}
+#navbarSupportedContent, .bg-light, .navbar-lg .navbar-collapse {
+  background-color: $second-primary!important;
+
+}
+
+.navbar{
+    padding: 0;
+}
